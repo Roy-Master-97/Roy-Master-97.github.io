@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Navbar -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <h1 class="brand-name" id="nombreHeader"></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active" data-seccion="inicio">Inicio</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="historia">Sobre mí</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="proyectos">Proyectos</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="tecnologias">Tecnologías</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="certificados">Certificaciones</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="contacto">Contacto</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" id="whatsappLink" target="_blank" title="WhatsApp" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" id="instagramLink" target="_blank" title="Instagram" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" id="linkedinLink" target="_blank" title="LinkedIn" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Cambiar modo de tema: claro, oscuro o automático">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" aria-label="Abrir menú de navegación" role="button" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Sección Inicio -->
+            <section id="inicio" class="seccion active">
+                <div class="hero">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 id="nombreCompleto" class="hero-nombre"></h1>
+                            <p id="subtituloProf" class="hero-subtitulo"></p>
+                            <p id="fraseBranding" class="hero-branding"></p>
+                            <p id="resumenTexto" class="hero-descripcion"></p>
+                            <div class="botones-inicio">
+                                <button class="btn btn-primary" onclick="irSeccion('proyectos')">Ver Proyectos</button>
+                                <button class="btn btn-secondary" onclick="descargarCV()">Descargar CV</button>
+                            </div>
+                        </div>
+                        <div class="hero-code">
+                            <div class="hero-terminal" aria-label="Terminal interactiva">
+                                <div class="terminal-header">
+                                    <span class="term-dot red"></span>
+                                    <span class="term-dot yellow"></span>
+                                    <span class="term-dot green"></span>
+                                    <span class="term-title">~/portafolio</span>
+                                </div>
+                                <pre class="terminal-body" id="terminalBody" aria-live="polite">Cargando terminal...</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Historia - Sobre Mí -->
+            <section id="historia" class="seccion">
+                <div class="seccion-content">
+                    <h2 id="historiaTitle"></h2>
+                    <p id="historiaTexto" class="descripcion-general"></p>
+                    <div class="timeline">
+                        <div id="timelineContainer"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Proyectos -->
+            <section id="proyectos" class="seccion">
+                <div class="seccion-content">
+                    <h2>Proyectos Destacados</h2>
+                    <div class="proyectos-grid" id="proyectosContainer"></div>
+                </div>
+            </section>
+
+            <!-- Sección Logros (antes de certificados) -->
+            <section id="logros" class="seccion" style="display: none;">
+                <div class="seccion-content">
+                    <h2 id="logrosTitle"></h2>
+                    <div class="logros-grid" id="logrosContainer"></div>
+                </div>
+            </section>
+
+            <!-- Sección Certificados -->
+            <section id="certificados" class="seccion">
+                <div class="seccion-content">
+                    <h2 id="certificadosTitle"></h2>
+                    <div class="certificados-grid" id="certificadosContainer"></div>
+                </div>
+            </section>
+
+            <!-- Sección Contacto -->
+            <section id="contacto" class="seccion">
+                <div class="seccion-content">
+                    <h2 id="contactoTitle"></h2>
+                    <p id="contactoDesc" class="descripcion-general"></p>
+                    <div class="contacto-section">
+                        <div class="contacto-box">
+                            <div class="contacto-item">
+                                <i class="fas fa-envelope contacto-icon"></i>
+                                <div>
+                                    <h3>Email</h3>
+                                    <a href="mailto:master.chief.roy@gmail.com" id="contactoEmail"></a>
+                                </div>
+                            </div>
+                            <div class="contacto-item">
+                                <i class="fas fa-phone contacto-icon"></i>
+                                <div>
+                                    <h3>Teléfono</h3>
+                                    <a href="tel:+593994498363" id="contactoTel"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacto-redes">
+                            <h3>Conecta Conmigo</h3>
+                            <div class="social-grid">
+                                <a href="#" id="contactoWhatsapp" target="_blank" class="social-contacto">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp</span>
+                                </a>
+                                <a href="#" id="contactoInstagram" target="_blank" class="social-contacto">
+                                    <i class="fab fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" id="contactoLinkedin" target="_blank" class="social-contacto">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Herramientas -->
+            <section id="tecnologias" class="seccion">
+                <div class="seccion-content">
+                    <h2>Tecnologías</h2>
+                    <div class="herramientas-grid" id="herramientasContainer"></div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Ronny Fabricio Toctaquiza Piedra. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Botón Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Modal para certificados -->
+    <div id="certificadoModal" class="modal-overlay">
+        <div class="modal-content certificado-modal">
+            <button class="modal-close" id="modalClose" aria-label="Cerrar modal de certificado">&times;</button>
+            <div class="certificado-modal-header">
+                <div class="certificado-seal">
+                    <i class="fas fa-award certificado-seal-icon"></i>
+                </div>
+                <h2 class="certificado-modal-title" id="modalTitle"></h2>
+                <div class="certificado-ribbon">
+                    <span>Certificado</span>
+                </div>
+            </div>
+            <div class="certificado-modal-body">
+                <div class="certificado-modal-icon" id="modalIcon"></div>
+                <div class="certificado-modal-details">
+                    <div class="certificado-modal-meta">
+                        <div class="meta-item">
+                            <strong>Plataforma:</strong> <span id="modalPlataforma"></span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Año:</strong> <span id="modalFecha"></span>
+                        </div>
+                    </div>
+                    <div class="certificado-modal-description">
+                        <p id="modalDescription"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="certificado-modal-footer">
+                <div class="certificado-signature">
+                    <div class="signature-line"></div>
+                    <span class="signature-text">Certificado Oficial</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

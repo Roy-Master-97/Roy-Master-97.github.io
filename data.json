@@ -1,0 +1,202 @@
+{
+  "nombre": "Ing. Ronny Toctaquiza",
+  "nombreCompleto": "Ing. Ronny Fabricio Toctaquiza Piedra",
+  "subtituloProfesional": "Telecommunications Engineer | Software & Cloud Developer",
+  "fraseBranding": "Desarrollo de soluciones tecnológicas que combinan software, redes e infraestructura en la nube.",
+  "carrera": "Ingeniería en Electrónica, Telecomunicaciones y Redes",
+  "universidad": "Escuela Superior Politécnica de Chimborazo",
+  "ubicacion": "Riobamba, Ecuador",
+  "email": "master.chief.roy@gmail.com",
+  "telefono": "+593 994498363",
+  "resumenPerfil": "Ingeniero especializado en telecomunicaciones con experiencia en desarrollo de software, infraestructura de redes y soluciones cloud. Apasionado por la innovación tecnológica y la optimización de sistemas.",
+  
+  "redesSociales": {
+    "whatsapp": "https://wa.me/1234567890",
+    "instagram": "https://instagram.com/tu_usuario",
+    "linkedin": "https://linkedin.com/in/tu_usuario"
+  },
+  "historia": {
+    "titulo": "Perfil Profesional",
+    "contenido": "Ingeniero en Electrónica, Telecomunicaciones y Redes apasionado por el desarrollo de soluciones tecnológicas que integran software, infraestructura de red y servicios en la nube. Tengo experiencia en desarrollo web, simulación de redes y diseño de sistemas tecnológicos orientados a optimizar la conectividad, el procesamiento de datos y la automatización de servicios digitales.",
+    "experiencias": [
+      {
+        "año": "2024 – Presente",
+        "titulo": "Desarrollador y Especialista en Telecomunicaciones y Redes",
+        "empresa": "Proyectos Tecnológicos",
+        "descripcion": "Proyectos tecnológicos enfocados en comunicaciones, desarrollo web, infraestructura de redes y soluciones basadas en la nube utilizando tecnologías modernas."
+      },
+      {
+        "año": "2023 – 2024",
+        "titulo": "Desarrollador Frontend",
+        "empresa": "Digital Solutions",
+        "descripcion": "Desarrollo de interfaces web interactivas utilizando HTML5, CSS3 y JavaScript, enfocadas en experiencia de usuario y rendimiento."
+      }
+    ]
+  },
+
+  "logros": {
+    "titulo": "Mis Logros",
+    "items": [
+      {
+        "icono": "fa-solid fa-graduation-cap",
+        "titulo": "Graduación",
+        "descripcion": "Completé mi carrera universitaria con honores"
+      },
+      {
+        "icono": "fa-solid fa-trophy",
+        "titulo": "Proyectos Exitosos",
+        "descripcion": "Desarrollé 15+ proyectos que impactaron positivamente"
+      },
+      {
+        "icono": "fa-solid fa-briefcase",
+        "titulo": "Experiencia Profesional",
+        "descripcion": "3+ años en la industria tecnológica"
+      },
+      {
+        "icono": "fa-solid fa-lightbulb",
+        "titulo": "Innovación",
+        "descripcion": "Implementé soluciones innovadoras que mejoraron procesos"
+      }
+    ]
+  },
+
+  "certificados": {
+    "titulo": "Certificados y Cursos",
+    "items": [
+      {
+        "icono": "fa-solid fa-laptop-code",
+        "nombre": "Fullstack Web Development",
+        "precio": "Plataforma",
+        "fecha": "2024",
+        "descripcion": "Desarrollo completo de aplicaciones web"
+      },
+      {
+        "icono": "fab fa-react",
+        "nombre": "React Advanced",
+        "precio": "Udemy",
+        "fecha": "2024",
+        "descripcion": "Desarrollo de aplicaciones avanzadas con React"
+      },
+      {
+        "icono": "fab fa-python",
+        "nombre": "Python for Data Science",
+        "precio": "DataCamp",
+        "fecha": "2023",
+        "descripcion": "Análisis de datos con Python y librerías especializadas"
+      },
+      {
+        "icono": "fab fa-aws",
+        "nombre": "AWS Solutions Architect",
+        "precio": "AWS",
+        "fecha": "2023",
+        "descripcion": "Diseño de arquitecturas en la nube con AWS"
+      },
+      {
+        "icono": "fas fa-shield-alt",
+        "nombre": "Ethical Hacking Fundamentals",
+        "precio": "Certificado",
+        "fecha": "2025",
+        "descripcion": "Curso de capacitación en Ethical Hacking"
+      },
+      {
+        "icono": "fas fa-microscope",
+        "nombre": "IMOC 2025 - Presentación",
+        "precio": "Conferencia",
+        "fecha": "2025",
+        "descripcion": "Presentación en IMOC 2025: Fractal Antena Phased Array para WiFi/Bluetooth/UWB"
+      },
+      {
+        "icono": "fas fa-graduation-cap",
+        "nombre": "Base de Datos I",
+        "precio": "IEEE Computer Society",
+        "fecha": "2025",
+        "descripcion": "Curso de Base de Datos I"
+      },
+      {
+        "icono": "fas fa-network-wired",
+        "nombre": "Redes de Datos I",
+        "precio": "IEEE Computer Society",
+        "fecha": "2025",
+        "descripcion": "Curso de Redes de Datos I"
+      },
+      {
+        "icono": "fas fa-shield-alt",
+        "nombre": "Seguridad Perimetral",
+        "precio": "IEEE Computer Society",
+        "fecha": "2025",
+        "descripcion": "Curso de Seguridad Perimetral"
+      }
+    ]
+  },
+
+  "tecnologias": {
+    "titulo": "Tecnologías",
+    "categorias": [
+      {
+        "titulo": "Lenguajes de programación",
+        "items": [
+          { "nombre": "Python", "icono": "fab fa-python", "porcentaje": 85, "color": "#3776ab" },
+          { "nombre": "JavaScript", "icono": "fab fa-js", "porcentaje": 90, "color": "#f7df1e" },
+          { "nombre": "Java", "icono": "fab fa-java", "porcentaje": 75, "color": "#ed2c4a" },
+          { "nombre": "SQL", "icono": "fas fa-database", "porcentaje": 80, "color": "#ffa500" }
+        ]
+      },
+      {
+        "titulo": "Desarrollo Web",
+        "items": [
+          { "nombre": "HTML5", "icono": "fab fa-html5", "porcentaje": 99, "color": "#e34f26" },
+          { "nombre": "CSS3", "icono": "fab fa-css3-alt", "porcentaje": 98, "color": "#264de4" },
+          { "nombre": "React", "icono": "fab fa-react", "porcentaje": 85, "color": "#61dafb" },
+          { "nombre": "Node.js", "icono": "fab fa-node-js", "porcentaje": 80, "color": "#3c873a" }
+        ]
+      },
+      {
+        "titulo": "Cloud Computing",
+        "items": [
+          { "nombre": "Microsoft Azure", "icono": "fab fa-microsoft", "porcentaje": 70, "color": "#0089d6" },
+          { "nombre": "AWS (en aprendizaje)", "icono": "fab fa-aws", "porcentaje": 65, "color": "#ff9900" }
+        ]
+      },
+      {
+        "titulo": "Herramientas y Software Técnico",
+        "items": [
+          { "nombre": "Packet Tracer", "icono": "fas fa-network-wired", "porcentaje": 78, "color": "#0066cc" },
+          { "nombre": "Advanced Design System (ADS)", "icono": "fas fa-cogs", "porcentaje": 70, "color": "#5c6bc0" },
+          { "nombre": "HTZ Communications", "icono": "fas fa-wifi", "porcentaje": 72, "color": "#00bcd4" },
+          { "nombre": "Radiomobile", "icono": "fas fa-satellite-dish", "porcentaje": 68, "color": "#7b1fa2" },
+          { "nombre": "MATLAB", "icono": "fas fa-wave-square", "porcentaje": 70, "color": "#f47f1f" }
+        ]
+      },
+      {
+        "titulo": "Desarrollo y herramientas",
+        "items": [
+          { "nombre": "Git", "icono": "fab fa-git-alt", "porcentaje": 92, "color": "#f05032" },
+          { "nombre": "GitHub", "icono": "fab fa-github", "porcentaje": 90, "color": "#1E90FF" },
+          { "nombre": "NetBeans", "icono": "fas fa-project-diagram", "porcentaje": 70, "color": "#0097a7" },
+          { "nombre": "Visual Studio Code", "icono": "fas fa-code", "porcentaje": 90, "color": "#007acc" }
+        ]
+      }
+    ]
+  },
+
+  "proyectos": {
+    "titulo": "Proyectos Destacados",
+    "items": [
+      {
+        "id": "tuenti",
+        "titulo": "Tuenti",
+        "descripcion": "Plataforma social y de mensajería con funcionalidades en tiempo real, chat multimedia y gestión de perfiles de usuario.",
+        "tecnologias": ["JavaScript", "HTML5", "CSS3", "Node.js"],
+        "icono": "fa-solid fa-comments",
+        "enlace": "./proyectos/tuenti/index.html"
+      }
+    ]
+  },
+
+  "contacto": {
+    "titulo": "Contacto",
+    "descripcion": "Conecta conmigo a través de mis redes sociales o envía me un correo directo.",
+    "email": "master.chief.roy@gmail.com",
+    "telefono": "+593 994498363"
+  }
+}
