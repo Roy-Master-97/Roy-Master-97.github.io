@@ -1,0 +1,48 @@
+{
+  "proyecto": {
+    "id": "biblioteca",
+    "titulo": "Sistema de Gestión Bibliotecaria",
+    "estado": "Completado",
+    "descripcion": "Sistema integral de gestión bibliotecaria con control de inventario, préstamos, devoluciones y gestión de usuarios.",
+    "resumen": "Aplicación web desarrollada para automatizar y optimizar los procesos de una biblioteca. Incluye funcionalidades de catalogación de libros, control de préstamos, gestión de usuarios y reportes estadísticos.",
+    "tecnologias": ["Python", "Django", "PostgreSQL", "JavaScript", "Bootstrap"],
+    "repositorio": "https://github.com",
+    "demo": "#",
+    "caracteristicas": [
+      {
+        "titulo": "Gestión de Catálogo",
+        "descripcion": "Catalogación completa de libros con ISBN, autor, editorial y disponibilidad en tiempo real.",
+        "icono": "fa-solid fa-book"
+      },
+      {
+        "titulo": "Control de Préstamos",
+        "descripcion": "Sistema de préstamos con fechas de devolución, renovaciones automáticas y avisos.",
+        "icono": "fa-solid fa-hand-holding-heart"
+      },
+      {
+        "titulo": "Gestión de Usuarios",
+        "descripcion": "Perfiles de usuarios con historial de préstamos y multas por retrasos.",
+        "icono": "fa-solid fa-users"
+      },
+      {
+        "titulo": "Reportes Estadísticos",
+        "descripcion": "Análisis de utilización de libros, usuarios activos y tendencias de préstamos.",
+        "icono": "fa-solid fa-chart-bar"
+      }
+    ],
+    "arquitectura": {
+      "frontend": {
+        "descripcion": "Interfaz responsiva con Bootstrap y JavaScript moderno para una experiencia intuitiva.",
+        "tecnologias": ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "jQuery"]
+      },
+      "backend": {
+        "descripcion": "API REST con Django, gestión segura de autenticación y autorización de usuarios.",
+        "tecnologias": ["Django", "Django REST", "Python 3.9", "JWT Auth"]
+      },
+      "base_datos": {
+        "descripcion": "Base de datos relacional PostgreSQL con optimización de consultas y respaldos automáticos.",
+        "tecnologias": ["PostgreSQL", "SQL", "Backup Automático"]
+      }
+    }
+  }
+}

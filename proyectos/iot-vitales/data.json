@@ -1,0 +1,48 @@
+{
+  "proyecto": {
+    "id": "iot-vitales",
+    "titulo": "Sistema IoT para Monitoreo de Signos Vitales",
+    "estado": "Completado",
+    "descripcion": "Plataforma IoT para monitoreo remoto de signos vitales con sensores inteligentes, alertas en tiempo real y análisis predictivo.",
+    "resumen": "Sistema completo que integra sensores wearable para monitoreo de frecuencia cardíaca, presión arterial y saturación de oxígeno, con dashboard web para visualización en tiempo real y alertas ante anomalías.",
+    "tecnologias": ["Arduino", "Node.js", "React", "MQTT", "MongoDB"],
+    "repositorio": "https://github.com",
+    "demo": "#",
+    "caracteristicas": [
+      {
+        "titulo": "Sensores Wearable",
+        "descripcion": "Integración con dispositivos wearable para captura de signos vitales en tiempo real.",
+        "icono": "fa-solid fa-heart-pulse"
+      },
+      {
+        "titulo": "Dashboard Web",
+        "descripcion": "Interfaz web responsiva para monitoreo de pacientes con histórico de datos.",
+        "icono": "fa-solid fa-chart-area"
+      },
+      {
+        "titulo": "Alertas Automáticas",
+        "descripcion": "Sistema de notificaciones para valores fuera de rango normal con escalado a profesionales.",
+        "icono": "fa-solid fa-bell"
+      },
+      {
+        "titulo": "Análisis Predictivo",
+        "descripcion": "Machine Learning para detección temprana de anomalías en patrones de salud.",
+        "icono": "fa-solid fa-brain"
+      }
+    ],
+    "arquitectura": {
+      "frontend": {
+        "descripcion": "Aplicación React con gráficos en tiempo real y responsive design para mobile.",
+        "tecnologias": ["React 18", "Chart.js", "Tailwind CSS", "WebSocket"]
+      },
+      "backend": {
+        "descripcion": "API Node.js con gestión de pacientes, alertas y procesamiento de datos biomédicos.",
+        "tecnologias": ["Node.js", "Express", "Python ML", "JWT"]
+      },
+      "base_datos": {
+        "descripcion": "MongoDB para almacenamiento flexible de datos de sensores e históricos.",
+        "tecnologias": ["MongoDB", "Redis Cache", "TimescaleDB"]
+      }
+    }
+  }
+}

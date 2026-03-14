@@ -1,0 +1,48 @@
+{
+  "proyecto": {
+    "id": "aplicaciones-web",
+    "titulo": "Aplicaciones Web Desarrolladas",
+    "estado": "Completado",
+    "descripcion": "Portfolio de aplicaciones web modernas desarrolladas con tecnologías actuales, incluyendo PWA, SPAs y aplicaciones full-stack escalables.",
+    "resumen": "Conjunto de aplicaciones web de diversos tipos: e-commerce, SaaS, plataformas colaborativas y herramientas de productividad. Todas implementadas con arquitecturas modernas, responsive design y optimización de rendimiento.",
+    "tecnologias": ["React", "Vue.js", "Node.js", "Python", "Docker", "AWS"],
+    "repositorio": "https://github.com",
+    "demo": "#",
+    "caracteristicas": [
+      {
+        "titulo": "E-commerce",
+        "descripcion": "Plataformas de venta en línea con carrito, pagos integrados y gestión de inventario.",
+        "icono": "fa-solid fa-cart-shopping"
+      },
+      {
+        "titulo": "SaaS",
+        "descripcion": "Aplicaciones de Software as a Service con autenticación multi-tenant y facturación automática.",
+        "icono": "fa-solid fa-cloud"
+      },
+      {
+        "titulo": "PWA",
+        "descripcion": "Progressive Web Apps con soporte offline y instalación en escritorio.",
+        "icono": "fa-solid fa-mobile"
+      },
+      {
+        "titulo": "APIs REST",
+        "descripcion": "Servicios backend escalables con documentación OpenAPI y rates limiting.",
+        "icono": "fa-solid fa-plug"
+      }
+    ],
+    "arquitectura": {
+      "frontend": {
+        "descripcion": "Interfaces modernas con React/Vue.js, estado management y testing automatizado.",
+        "tecnologias": ["React 18", "Vue 3", "Redux", "Jest", "Cypress"]
+      },
+      "backend": {
+        "descripcion": "Servidores Node.js/Python con patrones de arquitectura y documentación API.",
+        "tecnologias": ["Node.js", "Django", "FastAPI", "PostgreSQL", "Redis"]
+      },
+      "base_datos": {
+        "descripcion": "Bases de datos relacionales con réplicas y sharding para escalabilidad.",
+        "tecnologias": ["PostgreSQL", "MongoDB", "Elasticsearch"]
+      }
+    }
+  }
+}

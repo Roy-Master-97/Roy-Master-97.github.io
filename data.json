@@ -189,6 +189,54 @@
         "tecnologias": ["JavaScript", "HTML5", "CSS3", "Node.js"],
         "icono": "fa-solid fa-comments",
         "enlace": "./proyectos/tuenti/index.html"
+      },
+      {
+        "id": "biblioteca",
+        "titulo": "Sistema de Gestión Bibliotecaria",
+        "descripcion": "Plataforma de gestión de acervo bibliotecario con búsqueda avanzada, reservas y préstamos con seguimiento.",
+        "tecnologias": ["React", "Node.js", "MongoDB", "PostgreSQL"],
+        "icono": "fa-solid fa-book",
+        "enlace": "./proyectos/biblioteca/index.html"
+      },
+      {
+        "id": "rayos-cosmicos",
+        "titulo": "Detector de Rayos Cósmicos",
+        "descripcion": "Aplicación científica para análisis y detección de rayos cósmicos con visualización de datos en tiempo real.",
+        "tecnologias": ["Python", "JavaScript", "Flask", "D3.js"],
+        "icono": "fa-solid fa-meteor",
+        "enlace": "./proyectos/rayos-cosmicos/index.html"
+      },
+      {
+        "id": "lte-simulation",
+        "titulo": "Simulador de Red LTE",
+        "descripcion": "Herramienta de simulación y análisis de redes LTE con modelado de coberturas y rendimiento.",
+        "tecnologias": ["C++", "Python", "MATLAB", "Simulink"],
+        "icono": "fa-solid fa-tower-cell",
+        "enlace": "./proyectos/lte-simulation/index.html"
+      },
+      {
+        "id": "iot-vitales",
+        "titulo": "Sistema IoT de Monitoreo de Signos Vitales",
+        "descripcion": "Plataforma integrada para recolección, procesamiento y análisis de datos biométricos en tiempo real.",
+        "tecnologias": ["Arduino", "Node.js", "Vue.js", "PostgreSQL"],
+        "icono": "fa-solid fa-heart-pulse",
+        "enlace": "./proyectos/iot-vitales/index.html"
+      },
+      {
+        "id": "redes-mikrotik",
+        "titulo": "Configuración de Redes MikroTik y Fortinet",
+        "descripcion": "Proyectos de configuración y optimización de infraestructuras de red con seguridad perimetral.",
+        "tecnologias": ["MikroTik", "Fortinet", "Linux", "Networking"],
+        "icono": "fa-solid fa-network-wired",
+        "enlace": "./proyectos/redes-mikrotik/index.html"
+      },
+      {
+        "id": "aplicaciones-web",
+        "titulo": "Aplicaciones Web Desarrolladas",
+        "descripcion": "Colección de aplicaciones web modernas con arquitecturas escalables y experiencia de usuario optimizada.",
+        "tecnologias": ["Vue.js", "React", "TypeScript", "Node.js"],
+        "icono": "fa-solid fa-globe",
+        "enlace": "./proyectos/aplicaciones-web/index.html"
       }
     ]
   },

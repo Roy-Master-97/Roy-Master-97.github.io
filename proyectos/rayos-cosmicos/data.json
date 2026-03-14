@@ -1,0 +1,48 @@
+{
+  "proyecto": {
+    "id": "rayos-cosmicos",
+    "titulo": "Aplicación Científica para Detección de Rayos Cósmicos",
+    "estado": "En Investigación",
+    "descripcion": "Aplicación para análisis y detección de rayos cósmicos usando sensores especializados y procesamiento de datos en tiempo real.",
+    "resumen": "Proyecto de investigación que integra sensores de detección, procesamiento de señales en tiempo real y análisis estadístico de eventos cosmicos. Desarrollado en Python con visualización de datos interactiva.",
+    "tecnologias": ["Python", "NumPy", "Matplotlib", "MQTT", "Arduino"],
+    "repositorio": "https://github.com",
+    "demo": "#",
+    "caracteristicas": [
+      {
+        "titulo": "Detección de Eventos",
+        "descripcion": "Algoritmos avanzados para identificación y clasificación de rayos cósmicos en datos sensoriales.",
+        "icono": "fa-solid fa-waveform-lines"
+      },
+      {
+        "titulo": "Visualización Temporal",
+        "descripcion": "Gráficos en tiempo real de eventos detectados con timestamps precisos y energía estimada.",
+        "icono": "fa-solid fa-chart-line"
+      },
+      {
+        "titulo": "Análisis Estadístico",
+        "descripcion": "Cálculo de frequencias, distribuciones y patrones en la actividad de rayos cósmicos.",
+        "icono": "fa-solid fa-sigma"
+      },
+      {
+        "titulo": "Integración IoT",
+        "descripcion": "Conexión con sensores remotos mediante MQTT para análisis distribuído.",
+        "icono": "fa-solid fa-network-wired"
+      }
+    ],
+    "arquitectura": {
+      "frontend": {
+        "descripcion": "Dashboard interactivo con gráficos en tiempo real usando Plotly y Dash.",
+        "tecnologias": ["Python Dash", "Plotly", "Bootstrap", "JavaScript"]
+      },
+      "backend": {
+        "descripcion": "Procesamiento de señales con NumPy/SciPy y análisis estadístico avanzado.",
+        "tecnologias": ["Python 3.9", "NumPy", "SciPy", "Pandas"]
+      },
+      "base_datos": {
+        "descripcion": "Base de datos de series temporales para almacenar millones de eventos detectados.",
+        "tecnologias": ["InfluxDB", "TimescaleDB", "HDF5"]
+      }
+    }
+  }
+}

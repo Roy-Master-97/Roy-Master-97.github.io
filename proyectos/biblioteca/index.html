@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión Bibliotecaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="../../index.html" class="brand-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Volver al Portafolio</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active" data-seccion="inicio">Inicio</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="caracteristicas">Características</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="arquitectura">Arquitectura</a></li>
+                    <li><a href="#" class="nav-link" data-seccion="contacto">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+        <main class="main-content">
+            <section id="inicio" class="seccion active">
+                <div class="hero-proyecto">
+                    <div class="hero-header">
+                        <h1 id="proyectoTitulo"></h1>
+                        <p id="proyectoEstado" class="estado-badge"></p>
+                    </div>
+                    <p id="proyectoDescripcion" class="hero-descripcion"></p>
+                    <div class="tecnologias-principales" id="tecnosContainer"></div>
+                    <div class="botones-proyecto">
+                        <a href="#" id="verRepositorio" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-github"></i> Ver Repositorio
+                        </a>
+                        <a href="#" id="verDemo" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-globe"></i> Ver Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="resumen-proyecto">
+                    <h2>Resumen del Proyecto</h2>
+                    <p id="resumenTexto"></p>
+                </div>
+            </section>
+            <section id="caracteristicas" class="seccion">
+                <div class="seccion-content">
+                    <h2>Características Principales</h2>
+                    <div class="caracteristicas-grid" id="caracteristicasContainer"></div>
+                </div>
+            </section>
+            <section id="arquitectura" class="seccion">
+                <div class="seccion-content">
+                    <h2>Arquitectura Técnica</h2>
+                    <div class="arquitectura-grid" id="arquitecturaContainer"></div>
+                </div>
+            </section>
+            <section id="contacto" class="seccion">
+                <div class="seccion-content">
+                    <h2>Contacto</h2>
+                    <div class="contacto-proyecto">
+                        <p>¿Tienes preguntas sobre este proyecto? No dudes en contactarme:</p>
+                        <div class="contacto-detalles">
+                            <div class="detalle-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:master.chief.roy@gmail.com">master.chief.roy@gmail.com</a>
+                            </div>
+                            <div class="detalle-item">
+                                <i class="fab fa-linkedin"></i>
+                                <a href="https://linkedin.com/in/tu_usuario" target="_blank">LinkedIn</a>
+                            </div>
+                            <div class="detalle-item">
+                                <i class="fab fa-github"></i>
+                                <a href="https://github.com/tutusuario" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2026 Ing. Ronny Toctaquiza. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>

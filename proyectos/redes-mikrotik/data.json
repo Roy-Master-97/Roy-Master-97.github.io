@@ -1,0 +1,48 @@
+{
+  "proyecto": {
+    "id": "redes-mikrotik",
+    "titulo": "Configuración de Redes con MikroTik y Fortinet",
+    "estado": "Completado",
+    "descripcion": "Proyectos de configuración y optimización de infraestructuras de red usando MikroTik RouterOS y Fortinet FortiGate para seguridad perimetral.",
+    "resumen": "Implementación de soluciones de networking empresarial incluyendo ruteo BGP, OSPF, QoS, VPN, firewall rules y seguridad perimetral. Diseño de arquitecturas de red resilientes y de alto rendimiento.",
+    "tecnologias": ["MikroTik", "Fortinet", "BGP", "OSPF", "VPN", "Firewall"],
+    "repositorio": "https://github.com",
+    "demo": "#",
+    "caracteristicas": [
+      {
+        "titulo": "Ruteo Dinámico",
+        "descripcion": "Configuración de BGP y OSPF para convergencia rápida y balanceo de carga.",
+        "icono": "fa-solid fa-share-nodes"
+      },
+      {
+        "titulo": "Seguridad Perimetral",
+        "descripcion": "Firewall rules avanzadas, NAT, PAT y protección contra ataques DDoS.",
+        "icono": "fa-solid fa-shield"
+      },
+      {
+        "titulo": "VPN Empresarial",
+        "descripcion": "Configuración de site-to-site VPN y acceso remoto cifrado.",
+        "icono": "fa-solid fa-lock"
+      },
+      {
+        "titulo": "QoS y Tráfico",
+        "descripcion": "Shaping de tráfico, priorización de aplicaciones y monitoreo en tiempo real.",
+        "icono": "fa-solid fa-traffic-light"
+      }
+    ],
+    "arquitectura": {
+      "frontend": {
+        "descripcion": "Dashboards de monitoreo con estadísticas de tráfico y eventos de red.",
+        "tecnologias": ["Winbox", "Web Interface", "API REST"]
+      },
+      "backend": {
+        "descripcion": "Análisis de logs y automatización de cambios de configuración.",
+        "tecnologias": ["RouterOS API", "Fortinet FortiManager", "Python Automation"]
+      },
+      "base_datos": {
+        "descripcion": "Histórico de eventos y configuraciones para auditoría y recuperación.",
+        "tecnologias": ["MySQL", "Syslog", "SNMP Traps"]
+      }
+    }
+  }
+}

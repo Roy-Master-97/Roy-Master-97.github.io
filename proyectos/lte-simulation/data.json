@@ -1,0 +1,48 @@
+{
+  "proyecto": {
+    "id": "lte-simulation",
+    "titulo": "Simulación de Red LTE",
+    "estado": "Completado",
+    "descripcion": "Simulador de redes LTE (4G) con análisis de cobertura, rendimiento y optimización de recursos de espectro.",
+    "resumen": "Aplicación de simulación que modela el comportamiento de redes LTE, permitiendo análisis de cobertura, handover entre celdas y optimización de parámetros de red. Utiliza herramientas profesionales de simulación.",
+    "tecnologias": ["Packet Tracer", "Python", "MATLAB", "GNURadio", "LTE Protocol"],
+    "repositorio": "https://github.com",
+    "demo": "#",
+    "caracteristicas": [
+      {
+        "titulo": "Modelado de Celdas",
+        "descripcion": "Simulación realista de celdas LTE con patrones de propagación y atenuación de señal.",
+        "icono": "fa-solid fa-tower-cell"
+      },
+      {
+        "titulo": "Análisis de Cobertura",
+        "descripcion": "Mapas de cobertura con estudios de signal strength y quality indicators.",
+        "icono": "fa-solid fa-map"
+      },
+      {
+        "titulo": "Métricas de Rendimiento",
+        "descripcion": "KPIs como throughput, latencia, drop calls y handover success rate.",
+        "icono": "fa-solid fa-gauge"
+      },
+      {
+        "titulo": "Optimización de Red",
+        "descripcion": "Recomendaciones automáticas para mejora de parámetros y recursos.",
+        "icono": "fa-solid fa-sliders"
+      }
+    ],
+    "arquitectura": {
+      "frontend": {
+        "descripcion": "Interfaz visual para configuración de parámetros y visualización de mapas de cobertura.",
+        "tecnologias": ["Python Tkinter", "Matplotlib", "NumPy"]
+      },
+      "backend": {
+        "descripcion": "Motor de simulación con modelos de propagación ITU y algoritmos de handover.",
+        "tecnologias": ["Python 3.9", "MATLAB Engine", "GNURadio API"]
+      },
+      "base_datos": {
+        "descripcion": "Almacenamiento de configuraciones de simulación e histórico de resultados.",
+        "tecnologias": ["SQLite", "HDF5", "NetCDF"]
+      }
+    }
+  }
+}
