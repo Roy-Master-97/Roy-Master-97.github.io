@@ -1,208 +1,237 @@
-// Variables globales
-let proyectoData = {};
-
-// Inicializar la aplicación
-document.addEventListener('DOMContentLoaded', async () => {
-    console.log('Cargando proyecto Tuenti...');
-    
-    // Cargar datos del JSON
-    await cargarDatos();
-    
-    // Renderizar el contenido
-    renderizarPrincipal();
-    renderizarCaracteristicas();
-    renderizarArquitectura();
-    
-    // Configurar navegación
-    configurarNavegacion();
-    
-    // Configurar hamburger menu para móviles
-    configurarHamburger();
-    
-    // Configurar back to top
-    configurarBackToTop();
+// Tuenti App - Mobile Application Controller
+document.addEventListener('DOMContentLoaded', function() {
+    initializeApp();
 });
 
-// Cargar datos del archivo JSON
-async function cargarDatos() {
-    try {
-        const response = await fetch('data.json');
-        proyectoData = await response.json();
-        console.log('Datos cargados:', proyectoData);
-    } catch (error) {
-        console.error('Error cargando datos:', error);
-        proyectoData = {
-            proyecto: {
-                titulo: 'Proyecto',
-                descripcion: 'Descripción del proyecto'
-            }
-        };
+function initializeApp() {
+    setupNavigation();
+    setupServiceClickHandlers();
+    setupButtonAnimations();
+    setupCarouselLinks();
+    setupUsageCarousel();
+    console.log('Tuenti App Initialized');
+}
+
+// Navigation handlers - Bottom navigation bar
+function setupNavigation() {
+    const navItems = document.querySelectorAll('.nav-item');
+    
+    navItems.forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Remove active class from all items
+            navItems.forEach(nav => nav.classList.remove('active'));
+            
+            // Add active class to clicked item
+            this.classList.add('active');
+            
+            // Get navigation label
+            const label = this.querySelector('.nav-label').textContent;
+            console.log('Navigating to:', label);
+            
+            // Add navigation logic here based on label
+            handleNavigation(label);
+        });
+    });
+}
+
+// Handle navigation between sections
+function handleNavigation(section) {
+    switch(section) {
+        case 'Cuenta':
+            console.log('Loading account section');
+            break;
+        case 'Perfil':
+            console.log('Loading profile section');
+            break;
+        case 'Menú':
+            console.log('Loading menu section');
+            break;
+        case 'Servicios':
+            console.log('Loading services section');
+            break;
+        case 'Ayuda':
+            console.log('Loading help section');
+            break;
     }
 }
 
-// Renderizar contenido principal
-function renderizarPrincipal() {
-    const { proyecto } = proyectoData;
-    if (!proyecto) return;
-
-    document.getElementById('proyectoTitulo').textContent = proyecto.titulo;
-    document.getElementById('proyectoEstado').textContent = proyecto.estado;
-    document.getElementById('proyectoDescripcion').textContent = proyecto.descripcion;
-    document.getElementById('resumenTexto').textContent = proyecto.resumen;
-
-    // Renderizar tecnologías
-    const tecnosContainer = document.getElementById('tecnosContainer');
-    tecnosContainer.innerHTML = '';
-    (proyecto.tecnologias || []).forEach(tech => {
-        const badge = document.createElement('span');
-        badge.className = 'tech-badge';
-        badge.textContent = tech;
-        tecnosContainer.appendChild(badge);
-    });
-
-    // Configurar botones
-    const verRepositorio = document.getElementById('verRepositorio');
-    const verDemo = document.getElementById('verDemo');
-
-    if (verRepositorio) verRepositorio.href = proyecto.repositorio || '#';
-    if (verDemo) verDemo.href = proyecto.demo || '#';
-}
-
-// Renderizar características
-function renderizarCaracteristicas() {
-    const { proyecto } = proyectoData;
-    if (!proyecto || !proyecto.caracteristicas) return;
-
-    const container = document.getElementById('caracteristicasContainer');
-    container.innerHTML = '';
-
-    (proyecto.caracteristicas || []).forEach(caracteristica => {
-        const card = document.createElement('div');
-        card.className = 'caracteristica-card';
-
-        const iconHtml = caracteristica.icono.startsWith('fa')
-            ? `<i class="${caracteristica.icono}"></i>`
-            : '<i class="fas fa-star"></i>';
-
-        card.innerHTML = `
-            <div class="caracteristica-icon">${iconHtml}</div>
-            <h3>${caracteristica.titulo}</h3>
-            <p>${caracteristica.descripcion}</p>
-        `;
-
-        container.appendChild(card);
-    });
-}
-
-// Renderizar arquitectura
-function renderizarArquitectura() {
-    const { proyecto } = proyectoData;
-    if (!proyecto || !proyecto.arquitectura) return;
-
-    const container = document.getElementById('arquitecturaContainer');
-    container.innerHTML = '';
-
-    const { frontend, backend, base_datos } = proyecto.arquitectura;
-
-    const componentes = [
-        { titulo: 'Frontend', ...frontend },
-        { titulo: 'Backend', ...backend },
-        { titulo: 'Base de Datos', ...base_datos }
-    ];
-
-    componentes.forEach(componente => {
-        const card = document.createElement('div');
-        card.className = 'arquitectura-card';
-
-        const techsHtml = (componente.tecnologias || [])
-            .map(tech => `<span class="arquitectura-tech">${tech}</span>`)
-            .join('');
-
-        card.innerHTML = `
-            <h3>${componente.titulo}</h3>
-            <p>${componente.descripcion}</p>
-            <div class="arquitectura-techs">${techsHtml}</div>
-        `;
-
-        container.appendChild(card);
-    });
-}
-
-// Configurar navegación entre secciones
-function configurarNavegacion() {
-    const navLinks = document.querySelectorAll('.nav-link');
+// Service items click animation and handlers
+function setupServiceClickHandlers() {
+    const serviceItems = document.querySelectorAll('.servicio-item');
     
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+    serviceItems.forEach(item => {
+        item.addEventListener('click', function(e) {
             e.preventDefault();
             
-            const seccion = link.getAttribute('data-seccion');
+            const serviceTitle = this.querySelector('p').textContent;
+            console.log('Service clicked:', serviceTitle);
             
-            // Actualizar clase activa en navegación
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
+            // Handle specific service actions
+            handleServiceClick(serviceTitle);
+        });
+    });
+}
+
+// Handle service item clicks
+function handleServiceClick(service) {
+    switch(service) {
+        case 'Llamadas a otro país':
+            console.log('Opening international calls');
+            break;
+        case 'Datos Global':
+            console.log('Opening global data service');
+            break;
+        case 'Extras en 4G':
+            console.log('Opening 4G extras');
+            break;
+        case 'Plan de viaje':
+            console.log('Opening travel plan');
+            break;
+        case 'Llamadas sin roaming':
+            console.log('Opening roaming free calls');
+            break;
+        case 'Recarga otro':
+            console.log('Opening recharge service');
+            break;
+    }
+}
+
+// Button animations and handlers
+function setupButtonAnimations() {
+    // Compra más button
+    const compraBtn = document.querySelector('.btn-compra');
+    if (compraBtn) {
+        compraBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Compra más clicked - opening purchase flow');
+        });
+    }
+    
+    // Icon buttons (message, notification)
+    const iconBtns = document.querySelectorAll('.icon-btn');
+    iconBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const icon = this.textContent;
+            console.log('Icon button clicked:', icon);
             
-            // Mostrar sección
-            mostrarSeccion(seccion);
-            
-            // Cerrar hamburger menu si está abierto
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            if (hamburger && navMenu) {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
+            if (icon.includes('💬')) {
+                console.log('Opening messages');
+            } else if (icon.includes('🔔')) {
+                console.log('Opening notifications');
             }
         });
     });
+    
+    // Ver detalles link
+    const verDetallesLink = document.querySelector('.ver-detalles');
+    if (verDetallesLink) {
+        verDetallesLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Ver detalles clicked - showing usage details');
+        });
+    }
 }
 
-// Mostrar sección
-function mostrarSeccion(nombreSeccion) {
-    const secciones = document.querySelectorAll('.seccion');
-    secciones.forEach(seccion => {
-        seccion.classList.toggle('active', seccion.id === nombreSeccion);
-    });
+// Setup carousel links to navigate to packages
+function setupCarouselLinks() {
+    const carouselLinks = document.querySelectorAll('.carousel-slide a');
     
-    // Desplazarse a la parte superior
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-// Configurar hamburger menu
-function configurarHamburger() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    if (!hamburger || !navMenu) return;
-    
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-
-    // Cerrar menu cuando se hace clic en un enlace
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+    carouselLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Carousel link clicked - navigating to packages');
+            
+            // Find the Servicios nav item and click it
+            const navItems = document.querySelectorAll('.nav-item');
+            navItems.forEach(item => {
+                if (item.querySelector('.nav-label').textContent === 'Servicios') {
+                    item.click();
+                }
+            });
         });
     });
 }
 
-// Configurar back to top
-function configurarBackToTop() {
-    const backToTop = document.getElementById('backToTop');
-    if (!backToTop) return;
+// Setup usage carousel with swipe and click navigation
+function setupUsageCarousel() {
+    const indicators = document.querySelectorAll('.indicator-dot');
+    const slides = document.querySelectorAll('.usage-carousel-slide');
+    const wrapper = document.querySelector('.usage-carousel-wrapper');
+    let currentSlide = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
 
-    window.addEventListener('scroll', () => {
-        if (window.pageYOffset > 300) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
+    // Click indicators to navigate
+    indicators.forEach(indicator => {
+        indicator.addEventListener('click', function() {
+            const slideIndex = parseInt(this.getAttribute('data-slide'));
+            goToSlide(slideIndex);
+        });
+    });
+
+    function goToSlide(slideIndex) {
+        // Remove active class from all slides and indicators
+        slides.forEach(slide => slide.classList.remove('active'));
+        indicators.forEach(ind => ind.classList.remove('active'));
+
+        // Add active class to selected slide and indicator
+        slides[slideIndex].classList.add('active');
+        indicators[slideIndex].classList.add('active');
+
+        currentSlide = slideIndex;
+        console.log('Usage carousel: showing slide', slideIndex);
+    }
+
+    // Touch/swipe support
+    wrapper.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    wrapper.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swiped left - next slide
+                currentSlide = (currentSlide + 1) % slides.length;
+            } else {
+                // Swiped right - previous slide
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            }
+            goToSlide(currentSlide);
         }
-    });
+    }
+}
 
-    backToTop.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+// Optional: Load data from data.json
+async function loadAppData() {
+    try {
+        const response = await fetch('./data.json');
+        const data = await response.json();
+        console.log('App data loaded:', data);
+    } catch (error) {
+        console.error('Error loading app data:', error);
+    }
+}
+
+// Optional: Format currency
+function formatCurrency(amount) {
+    return new Intl.NumberFormat('es-ES', {
+        style: 'currency',
+        currency: 'USD'
+    }).format(amount);
+}
+
+// Optional: Format data size
+function formatDataSize(gigabytes) {
+    return `${gigabytes.toFixed(2)} GB`;
 }
