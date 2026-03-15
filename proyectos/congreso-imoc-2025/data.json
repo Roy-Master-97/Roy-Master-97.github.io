@@ -6,11 +6,11 @@
     "fecha": "Octubre 2025",
     "tipo": "Galería Interactiva",
     "tecnologias": ["HTML5", "CSS3", "JavaScript", "Carousel 3D", "Responsive Design"],
-    "resumen": "Galería interactiva de 21 imágenes del Congreso Internacional IMOC 2025. Carrusel con soporte 3D, drag & drop, navegación por teclado y paginación responsiva.",
+    "resumen": "Galería interactiva optimizada de 10 imágenes del Congreso Internacional IMOC 2025. Carrusel con soporte 3D, drag & drop, navegación por teclado y paginación responsiva.",
     "caracteristicas": [
       {
         "titulo": "Carrusel 3D Avanzado",
-        "descripcion": "21 slides con transformaciones 3D, rotación en perspectiva y parallax effect"
+        "descripcion": "10 slides con transformaciones 3D, rotación en perspectiva y parallax effect"
       },
       {
         "titulo": "Interactividad Completa",
@@ -18,7 +18,7 @@
       },
       {
         "titulo": "Diseño Responsivo",
-        "descripcion": "Adaptable a todos los tamaños de pantalla con breakpoints optimizados"
+        "descripcion": "Adaptable a todos los tamaños de pantalla con breakpoints optimizados para móviles"
       },
       {
         "titulo": "Animaciones Fluidas",
@@ -27,6 +27,10 @@
       {
         "titulo": "Accesibilidad",
         "descripcion": "ARIA labels, navegación por teclado, reducción de movimiento respetada"
+      },
+      {
+        "titulo": "Optimización de Carga",
+        "descripcion": "Imágenes comprimidas, carga eficiente y rendimiento optimizado para todos los dispositivos"
       }
     ],
     "arquitectura": {
@@ -35,11 +39,11 @@
         "tecnologias": ["HTML5 semántico", "CSS3 Grid/Flexbox", "Vanilla JavaScript"]
       },
       "multimedia": {
-        "descripcion": "Galería de 21 imágenes de alta calidad con optimización de carga",
-        "tecnologias": ["Image Preloading", "Background Image Optimization"]
+        "descripcion": "Galería de 10 imágenes de alta calidad con optimización de carga",
+        "tecnologias": ["Image Preloading", "Background Image Optimization", "Responsive Images"]
       },
       "renderizado": {
-        "descripcion": "Sistema de renderizado con transform3d y perspective",
+        "descripcion": "Sistema de renderizado con transform3d y perspective optimizado para móviles",
         "tecnologias": ["CSS 3D Transforms", "requestAnimationFrame", "Web APIs"]
       }
     }

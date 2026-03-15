@@ -11,7 +11,7 @@
   --congresoC-glow: rgba(33, 150, 243, 0.75);
   --congresoC-slideW: min(920px, 90vw);
   --congresoC-peek: 0.12;
-  --congresoPagH: 64px;
+  --congresoPagH: 56px;
   --congresoCardH: clamp(380px, 65vh, 680px);
 }
 
@@ -164,7 +164,7 @@ body {
   justify-content: space-between;
   pointer-events: none;
   z-index: 10;
-  padding: 0 12px;
+  padding: 0 8px;
 }
 
 .congresoCarousel-prev,
@@ -214,7 +214,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: max(28px, env(safe-area-inset-bottom));
+  bottom: max(20px, env(safe-area-inset-bottom));
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -222,7 +222,7 @@ body {
   pointer-events: auto;
   z-index: 11;
   flex-wrap: wrap;
-  padding: 0 16px;
+  padding: 0 12px;
 }
 
 .congresoCarousel-dot {
@@ -303,59 +303,106 @@ body {
 
 @media (max-width: 768px) {
   :root {
-    --congresoC-slideW: min(92vw, 640px);
+    --congresoC-slideW: min(95vw, 520px);
+    --congresoPagH: 48px;
+    --congresoCardH: clamp(320px, 70vh, 600px);
   }
   
   .congresoCarousel {
-    padding: 12px 12px;
+    padding: 8px 8px;
   }
   
   .congresoCard-head {
-    inset: 24px 20px auto 20px;
+    inset: 20px 18px auto 18px;
   }
   
   .congresoCard-title {
-    font-size: clamp(20px, 4.5vw, 32px);
+    font-size: clamp(18px, 5vw, 28px);
   }
   
   .congresoCard-kicker {
-    font-size: clamp(12px, 3vw, 14px);
+    font-size: clamp(11px, 3.5vw, 13px);
   }
   
   .congresoCarousel-prev,
   .congresoCarousel-next {
-    width: 44px;
-    height: 44px;
-    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .congresoCarousel-pagination {
+    bottom: max(16px, env(safe-area-inset-bottom));
+    gap: 6px;
+  }
+  
+  .congresoCarousel-dot {
+    width: 7px;
+    height: 7px;
+  }
+  
+  .congresoCarousel-dot[aria-selected="true"] {
+    transform: scale(1.2);
   }
 }
 
 @media (max-width: 560px) {
   :root {
-    --congresoC-slideW: min(94vw, 540px);
+    --congresoC-slideW: min(96vw, 380px);
+    --congresoPagH: 44px;
+    --congresoCardH: clamp(280px, 75vh, 520px);
+  }
+  
+  .congresoCarousel {
+    padding: 6px 6px;
   }
   
   .congresoCard-head {
-    inset: 20px 16px auto 16px;
+    inset: 16px 14px auto 14px;
+  }
+  
+  .congresoCard-title {
+    font-size: clamp(16px, 5vw, 24px);
+  }
+  
+  .congresoCard-kicker {
+    font-size: clamp(10px, 3vw, 12px);
+  }
+  
+  .congresoCarousel-prev,
+  .congresoCarousel-next {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
   }
   
   .congresoCarousel-pagination {
-    gap: 8px;
+    gap: 5px;
   }
   
   .congresoCarousel-dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
   }
   
   .congresoCarousel-dot[aria-selected="true"] {
-    transform: scale(1.3);
+    transform: scale(1.15);
+  }
+}
+
+@media (max-height: 600px) {
+  .congresoCard-kicker {
+    font-size: clamp(10px, 2.5vw, 11px);
   }
 }
 
 @media (max-height: 500px) {
   .congresoCard-kicker {
     display: none;
+  }
+  
+  .congresoCard-head {
+    inset: 12px 12px auto 12px;
   }
 }
 

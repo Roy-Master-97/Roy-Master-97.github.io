@@ -64,37 +64,9 @@
     "titulo": "Certificados y Cursos",
     "items": [
       {
-        "icono": "fa-solid fa-laptop-code",
-        "nombre": "Fullstack Web Development",
-        "precio": "Plataforma",
-        "fecha": "2024",
-        "descripcion": "Desarrollo completo de aplicaciones web"
-      },
-      {
-        "icono": "fab fa-react",
-        "nombre": "React Advanced",
-        "precio": "Udemy",
-        "fecha": "2024",
-        "descripcion": "Desarrollo de aplicaciones avanzadas con React"
-      },
-      {
-        "icono": "fab fa-python",
-        "nombre": "Python for Data Science",
-        "precio": "DataCamp",
-        "fecha": "2023",
-        "descripcion": "Análisis de datos con Python y librerías especializadas"
-      },
-      {
-        "icono": "fab fa-aws",
-        "nombre": "AWS Solutions Architect",
-        "precio": "AWS",
-        "fecha": "2023",
-        "descripcion": "Diseño de arquitecturas en la nube con AWS"
-      },
-      {
         "icono": "fas fa-shield-alt",
         "nombre": "Ethical Hacking Fundamentals",
-        "precio": "Certificado",
+        "precio": "IEEE Computer Society",
         "fecha": "2025",
         "descripcion": "Curso de capacitación en Ethical Hacking"
       },
@@ -125,6 +97,34 @@
         "precio": "IEEE Computer Society",
         "fecha": "2025",
         "descripcion": "Curso de Seguridad Perimetral"
+      },
+      {
+        "icono": "fa-solid fa-laptop-code",
+        "nombre": "Fullstack Web Development",
+        "precio": "Plataforma",
+        "fecha": "2024",
+        "descripcion": "Desarrollo completo de aplicaciones web"
+      },
+      {
+        "icono": "fab fa-react",
+        "nombre": "React Advanced",
+        "precio": "Udemy",
+        "fecha": "2024",
+        "descripcion": "Desarrollo de aplicaciones avanzadas con React"
+      },
+      {
+        "icono": "fab fa-python",
+        "nombre": "Python for Data Science",
+        "precio": "DataCamp",
+        "fecha": "2023",
+        "descripcion": "Análisis de datos con Python y librerías especializadas"
+      },
+      {
+        "icono": "fab fa-aws",
+        "nombre": "AWS Solutions Architect",
+        "precio": "AWS",
+        "fecha": "2023",
+        "descripcion": "Diseño de arquitecturas en la nube con AWS"
       }
     ]
   },
@@ -185,7 +185,7 @@
       {
         "id": "congreso-imoc-2025",
         "titulo": "Congreso IMOC 2025",
-        "descripcion": "Galería interactiva 3D de la conferencia IMOC 2025 - Campina Grande, Brasil. Carrusel con 21 imágenes de la evento académico sobre antenas fractales y tecnologías inalámbricas.",
+        "descripcion": "Galería interactiva 3D optimizada de 10 imágenes de la conferencia IMOC 2025 - Campina Grande, Brasil. Carrusel con transformaciones 3D, navegación fluida y diseño completamente responsivo para todos los dispositivos.",
         "tecnologias": ["JavaScript", "HTML5", "CSS3", "3D Transforms"],
         "icono": "fa-solid fa-images",
         "enlace": "./proyectos/congreso-imoc-2025/index.html"
@@ -229,22 +229,6 @@
         "tecnologias": ["Arduino", "Node.js", "Vue.js", "PostgreSQL"],
         "icono": "fa-solid fa-heart-pulse",
         "enlace": "./proyectos/iot-vitales/index.html"
-      },
-      {
-        "id": "redes-mikrotik",
-        "titulo": "Configuración de Redes MikroTik y Fortinet",
-        "descripcion": "Proyectos de configuración y optimización de infraestructuras de red con seguridad perimetral.",
-        "tecnologias": ["MikroTik", "Fortinet", "Linux", "Networking"],
-        "icono": "fa-solid fa-network-wired",
-        "enlace": "./proyectos/redes-mikrotik/index.html"
-      },
-      {
-        "id": "aplicaciones-web",
-        "titulo": "Aplicaciones Web Desarrolladas",
-        "descripcion": "Colección de aplicaciones web modernas con arquitecturas escalables y experiencia de usuario optimizada.",
-        "tecnologias": ["Vue.js", "React", "TypeScript", "Node.js"],
-        "icono": "fa-solid fa-globe",
-        "enlace": "./proyectos/aplicaciones-web/index.html"
       }
     ]
   },
