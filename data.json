@@ -183,6 +183,14 @@
     "titulo": "Proyectos Destacados",
     "items": [
       {
+        "id": "congreso-imoc-2025",
+        "titulo": "Congreso IMOC 2025",
+        "descripcion": "Galería interactiva 3D de la conferencia IMOC 2025 - Campina Grande, Brasil. Carrusel con 21 imágenes de la evento académico sobre antenas fractales y tecnologías inalámbricas.",
+        "tecnologias": ["JavaScript", "HTML5", "CSS3", "3D Transforms"],
+        "icono": "fa-solid fa-images",
+        "enlace": "./proyectos/congreso-imoc-2025/index.html"
+      },
+      {
         "id": "tuenti",
         "titulo": "Tuenti",
         "descripcion": "Plataforma social y de mensajería con funcionalidades en tiempo real, chat multimedia y gestión de perfiles de usuario.",
